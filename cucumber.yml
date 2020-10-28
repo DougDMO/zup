@@ -1,0 +1,9 @@
+## Features
+carrinho: --tags @carrinho
+
+## Reports
+html_report: --format progress --format html --out=features_report.html
+json: --format json --out=report.json
+all: --tags @all -p json -p html_report
+smoke_test: --tags @smoke_test -p json -p html_report
+doing: --tags @doing
